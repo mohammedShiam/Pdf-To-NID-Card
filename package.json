@@ -1,0 +1,24 @@
+{
+  "name": "Pdf-To-Nid-Card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bwip-js": "^3.1.0",
+    "convertapi": "^1.11.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "google-translate-api": "^2.3.0",
+    "multer": "*",
+    "nodemon": "^2.0.20",
+    "pdfkit": "^0.13.0",
+    "pdfreader": "^2.0.0"
+  }
+}

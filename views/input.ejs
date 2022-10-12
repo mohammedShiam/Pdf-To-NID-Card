@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <form method="post" action="/output">
+
+        <div class="input-group">
+            <label for="bangla-name">Name(বাংলায়)</label>
+            <input type="text" name="banglaName" id="bangla-name" value="<%= typeof banglaName  === 'undefined' ? '-' : banglaName %>" placeholder="input Field"><br><br>
+        </div>
+
+        <div class="input-group">
+            <label for="bangla-name">Name(In English)</label>
+            <input type="text" name="englishName" id="english-name" value="<%= typeof englishName === 'undefined' ? '-' : englishName %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="father-name">Father Name(বাংলায়)</label>
+            <input type="text" name="fatherName" id="father-name" value="<%= typeof fatherName === 'undefined' ? '-' : fatherName %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="mother-name">Mother Name(বাংলায়)</label>
+            <input type="text" name="motherName" id="mother-name" value="<%= typeof motherName === 'undefined' ? '-' : motherName %>" placeholder="input Field"><br><br>
+        </div>
+
+        <div class="input-group">
+            <label for="date-of-birth">Date of Birth(In English)</label>
+            <input type="text" name="dateOfBirth" id="date-of-birth" value="<%= typeof dateOfBirth === 'undefined'? '-' : dateOfBirth %>" placeholder="input Field"><br><br>
+        </div>
+         <div class="input-group">
+            <label for="nid-no">Nid No.(In English)</label>
+            <input type="text" name="nidNo" id="nid-no" value="<%= typeof nidNo === 'undefined' ? '-' : nidNo %>" placeholder="input Field"><br><br>
+        </div>
+         <div class="input-group">
+            <label for="Home-Holding">Home/Holding(বাংলায়)</label>
+            <input type="text" name="homeOrHolding" id="Home-Holding" value="<%= typeof homeOrHolding === 'undefined' ? '-' : homeOrHolding %>" placeholder="input Field"><br><br>
+        </div> 
+        
+        <div class="input-group">
+            <label for="Village-Road">Village/Road(বাংলায়)</label>
+            <input type="text" name="villageOrRoad" id="Village-Road" value="<%= typeof villageOrRoad  === 'undefined' ? '-' : villageOrRoad %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="post-office">Post Office(বাংলায়)</label>
+            <input type="text" name="postOffice" id="post-office" value="<%= typeof postOffice === 'undefined' ? '-' :  postOffice %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="blood-group">Blood Group(In English)</label>
+            <input type="text" name="bloodGroup" id="blood-group" value="<%= typeof bloodGroup === 'undefined' ? '-' : bloodGroup %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="birth-place">Birth Place(বাংলায়)</label>
+            <input type="text" name="birthPlace" id="birth-place" value="<%= typeof birthPlace === 'undefined' ? '-' : birthPlace %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="issu-date">Issu Date(বাংলায়)</label>
+            <input type="text" name="issuDate" id="fissu-date" value="<%= typeof issuDate === 'undefined' ? '-' : issuDate %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="image">Image</label>
+            <input type="file" name="image" id="image" value="<%= typeof image === 'undefined' ? '-' : image %>" placeholder="input Field"><br><br>
+        </div>
+        <div class="input-group">
+            <label for="signature">Signature</label>
+            <input type="text" name="signature" id="signature" value="<%= typeof signature === 'undefined' ? '-' : signature %>" placeholder="input Field"><br><br>
+        </div>
+       
+    
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
